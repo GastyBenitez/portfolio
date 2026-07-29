@@ -1,0 +1,290 @@
+/* ================================
+   DESIGN SYSTEM
+================================ */
+
+:root {
+
+    /* Colors */
+
+    --bg: #0B0F19;
+    --surface: #121826;
+
+    --text: #F8FAFC;
+    --text-secondary: #94A3B8;
+
+    --primary: #3B82F6;
+    --primary-hover: #2563EB;
+
+    --border: #1E293B;
+
+    /* Typography */
+
+    --font-family: "Inter", sans-serif;
+
+    /* Layout */
+
+
+    --container: 1200px;
+
+    /* Border Radius */
+
+    --radius-sm: .5rem;
+    --radius-md: .875rem;
+    --radius-lg: 1.5rem;
+
+    /* Transition */
+
+    --transition: .25s ease;
+
+}
+
+/* ==========================================
+   GLOBAL STYLES
+========================================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.container {
+    width: min(100% - 2rem, var(--container));
+    margin-inline: auto;
+}
+
+section {
+    padding: 8rem 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.1;
+    font-weight: 700;
+}
+
+p {
+    color: var(--text-secondary);
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    display: block;
+}
+
+/* ==========================================
+   COMPONENTS
+========================================== */
+
+/* Buttons */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: .9rem 1.6rem;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: var(--primary-hover);
+}
+
+.btn-secondary {
+    border: 1px solid var(--border);
+    color: var(--text);
+}
+
+.btn-secondary:hover {
+    background: var(--surface);
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.header {
+    position: fixed;
+    inset: 0 0 auto 0;
+    z-index: 1000;
+    padding: 1.5rem 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: -.02em;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.nav-menu a {
+    color: var(--text-secondary);
+    font-size: .95rem;
+    transition: var(--transition);
+}
+
+.nav-menu a:hover {
+    color: var(--text);
+}
+
+/* ==========================================
+   HERO
+========================================== */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 7rem;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.hero-badge {
+    color: var(--primary);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: .85rem;
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1.1;
+    max-width: 13ch;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    max-width: 55ch;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.hero-visual {
+    min-height: 500px;
+}
+
+/* ==========================================
+   HERO VISUAL
+========================================== */
+
+.browser {
+    width: 100%;
+    max-width: 520px;
+    margin-left: auto;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, .35);
+}
+
+.browser-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.browser-controls {
+    display: flex;
+    gap: .5rem;
+}
+
+.browser-controls span {
+    width: .7rem;
+    height: .7rem;
+    border-radius: 50%;
+    background: #334155;
+}
+
+.browser-address {
+    font-size: .8rem;
+    color: var(--text-secondary);
+}
+
+.browser-body {
+    padding: 1.5rem;
+}
+
+.browser-hero {
+    height: 160px;
+    border-radius: var(--radius-md);
+    background: linear-gradient(
+        135deg,
+        var(--primary),
+        #1d4ed8
+    );
+    margin-bottom: 1.5rem;
+}
+
+.browser-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.browser-card {
+    height: 80px;
+    background: var(--bg);
+    border-radius: var(--radius-md);
+}
+
+.browser-line {
+    height: .75rem;
+    border-radius: 999px;
+    background: #243042;
+    margin-bottom: .8rem;
+}
+
+.browser-line.short {
+    width: 60%;
+}
