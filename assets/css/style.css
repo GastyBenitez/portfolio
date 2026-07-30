@@ -280,5 +280,155 @@ img {
     margin-bottom: 0;
 }
 
+/* ==========================================
+   TRABAJOS RECIENTES
+========================================== */
 
+.projects-grid {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5rem;
+}
 
+.project-card {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: 20px;
+
+    padding: 2.5rem;
+}
+
+.project-preview {
+    flex: 0 0 40%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 260px;
+
+    border: 1px dashed var(--border);
+    border-radius: 16px;
+}
+
+.project-content {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 1.25rem;
+}
+
+.project-status {
+    font-weight: 600;
+    color: var(--primary);
+    margin-top: .75rem;
+}
+
+.project-placeholder {
+    text-align: center;
+}
+
+/* ==========================================
+   SERVICIOS
+========================================== */
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.service-card {
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+
+    padding: 2rem;
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.service-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.service-description {
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+/* ==========================================
+   CONTACTO
+========================================== */
+
+.contact-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 4rem;
+    max-width: 900px;
+}
+
+.contact-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1.5rem;
+
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 600;
+
+    transition: var(--transition);
+}
+
+.contact-card:hover {
+    border-color: var(--primary);
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.footer {
+    padding: 2rem 0;
+
+    border-top: 1px solid var(--border);
+}
+
+.footer p {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: .9rem;
+}
+
+.footer a {
+    color: inherit;
+    text-decoration: none;
+
+    transition: var(--transition);
+}
+
+.footer a:hover {
+    color: var(--primary);
+}
