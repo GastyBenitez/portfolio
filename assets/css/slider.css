@@ -1,0 +1,762 @@
+.browser {
+    width: 100%;
+    max-width: 520px;
+    margin-left: auto;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, .45),
+                inset 0 1px rgba(255 , 255, 255, .05);
+}
+
+.browser-header {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.browser-controls {
+    display: flex;
+    gap: .5rem;
+}
+
+.browser-controls span {
+    width: .7rem;
+    height: .7rem;
+    border-radius: 50%;
+    background: #334155;
+}
+
+
+
+.browser-content {
+    padding: 1.5rem;
+}
+
+
+.browser-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.browser-card {
+    height: 80px;
+    background: var(--bg);
+    border-radius: var(--radius-md);
+}
+
+
+
+/* ==========================================================
+   Browser Hero
+========================================================== */
+
+.browser-hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+
+    padding: 20px;
+    margin-bottom: 22px;
+
+    border-radius: 18px;
+
+    background: linear-gradient(
+        135deg,
+        #3B82F6,
+        #2563EB
+    );
+}
+
+.browser-hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.browser-badge {
+    display: inline-block;
+
+    margin-bottom: 10px;
+
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+
+    color: rgba(255,255,255,.85);
+}
+
+.browser-title {
+    position: absolute;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-size: .8rem;
+    font-weight: 600;
+
+    color: #fff;
+    white-space: nowrap;
+}
+
+.browser-text {
+    margin-bottom: 18px;
+
+    font-size: .9rem;
+    line-height: 1.5;
+
+    color: rgba(255,255,255,.82);
+}
+
+
+
+.browser-illustration {
+    width: 140px;
+    height: 120px;
+
+    border-radius: 14px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,.22),
+            rgba(255,255,255,.05)
+        );
+
+    border: 1px solid rgba(255,255,255,.18);
+}
+
+/* ==========================================================
+   Browser Cards
+========================================================== */
+
+.browser-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:16px;
+
+    margin-bottom:22px;
+}
+
+.browser-card{
+    padding:18px;
+
+    background:#0F172A;
+
+    border:1px solid rgba(255,255,255,.05);
+
+    border-radius:14px;
+
+    transition:.25s;
+}
+
+.browser-card:hover{
+    transform:translateY(-4px);
+    background: #15203a;
+
+    border-color:rgba(59,130,246,.35);
+}
+
+.browser-icon{
+    width:38px;
+    height:38px;
+
+    margin-bottom:14px;
+
+    border-radius:10px;
+
+    background:linear-gradient(
+        135deg,
+        rgba(59,130,246,.35),
+        rgba(37,99,235,.15)
+    );
+}
+
+.browser-card h4{
+    margin-bottom:6px;
+
+    font-size:.9rem;
+    font-weight:600;
+
+    color:#fff;
+}
+
+.browser-card p{
+    font-size:.75rem;
+    line-height:1.4;
+
+    color:rgba(255,255,255,.6);
+}
+
+/* ==========================================================
+   Browser Illustration
+========================================================== */
+
+.browser-illustration{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+
+    width:140px;
+    height:120px;
+
+    padding:14px;
+
+    border-radius:14px;
+
+    background:rgba(255,255,255,.10);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    backdrop-filter:blur(6px);
+}
+
+.illustration-header{
+    width:65%;
+    height:8px;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.85);
+}
+
+.illustration-line{
+    height:6px;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.35);
+}
+
+.illustration-line.large{
+    width:100%;
+}
+
+.illustration-line.small{
+    width:55%;
+}
+
+.illustration-chart{
+    display:flex;
+    align-items:flex-end;
+    gap:6px;
+
+    flex:1;
+}
+
+.illustration-chart span{
+    flex:1;
+
+    border-radius:4px 4px 0 0;
+
+    background:rgba(255,255,255,.80);
+}
+
+.illustration-chart span:nth-child(1){
+    height:18px;
+}
+
+.illustration-chart span:nth-child(2){
+    height:34px;
+}
+
+.illustration-chart span:nth-child(3){
+    height:24px;
+}
+
+.illustration-chart span:nth-child(4){
+    height:46px;
+}
+
+/* ==========================================
+   BROWSER CONTENT
+========================================== */
+
+.browser-content {
+    position: relative;
+    overflow: hidden;
+    padding: 1.5rem;
+}
+
+/* ==========================================
+   BROWSER SLIDER
+========================================== */
+
+.browser-slider {
+    display: flex;
+    transition: transform .6s ease;
+    will-change: transform;
+}
+
+.browser-slide {
+    flex: 0 0 100%;
+}
+
+.browser-viewport {
+    overflow: hidden;
+    border-radius: var(--radius-md);
+}
+
+/* ==========================================
+   Browser Slides
+========================================== */
+
+.browser-landing,
+.browser-comdilo-client,
+.browser-comdilo-admin {
+    height: 320px;
+    border-radius: var(--radius-md);
+    padding: 1rem;
+}
+
+.browser-landing {
+    background: #2563EB;
+}
+
+
+
+
+
+
+/* ==========================================
+   Landing Slide
+========================================== */
+
+.browser-landing {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: 100%;
+}
+
+/* ==========================================
+   Landing Hero
+========================================== */
+
+.landing-hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+
+    flex: 1;
+}
+
+.landing-content {
+    flex: 1;
+}
+
+.landing-image {
+    width: 120px;
+    height: 120px;
+    border-radius: var(--radius-md);
+    background: #d1d5db;
+}
+
+.landing-badge {
+    display: block;
+    width: 80px;
+    height: 12px;
+    border-radius: 999px;
+    background: #93c5fd;
+    margin-bottom: 1rem;
+}
+
+.landing-title {
+    width: 220px;
+    height: 22px;
+    border-radius: 8px;
+    background: white;
+    margin-bottom: .75rem;
+}
+
+.landing-text {
+    width: 180px;
+    height: 12px;
+    border-radius: 8px;
+    background: rgba(255,255,255,.6);
+    margin-bottom: 1.5rem;
+}
+
+.landing-button {
+    width: 100px;
+    height: 36px;
+    border-radius: 10px;
+    background: #111827;
+}
+
+.landing-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 1rem;
+}
+
+.landing-logo {
+    width: 50px;
+    height: 10px;
+    border-radius: 999px;
+    background: white;
+}
+
+.landing-nav {
+    display: flex;
+    gap: .5rem;
+}
+
+.landing-nav-item {
+    width: 22px;
+    height: 6px;
+    border-radius: 999px;
+    background: rgba(255,255,255,.55);
+}
+
+.landing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .75rem;
+    margin-top: 1rem;
+}
+
+.landing-card {
+    height: 45px;
+    border-radius: 10px;
+    background: rgba(255,255,255,.15);
+}
+
+/* ==========================================
+   Comdilo Cliente Slide
+========================================== */
+
+.browser-comdilo-client {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: #edf2f7;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+
+.comdilo-cover{
+    height:90px;
+    overflow:hidden;
+}
+
+.comdilo-cover img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.comdilo-info{
+    display:flex;
+    align-items:center;
+
+    gap:.75rem;
+
+    padding:1rem;
+}
+.comdilo-logo{
+
+    width:44px;
+    height:44px;
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+    border:2px solid white;
+
+    flex-shrink:0;
+
+    margin-top:-30px;
+}
+
+.comdilo-logo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.comdilo-details {
+    flex: 1;
+}
+
+.comdilo-name{
+    margin:0;
+
+    font-size:.75rem;
+    font-weight:700;
+
+    color:#111827;
+}
+
+.comdilo-description{
+    margin:.15rem 0 0;
+
+    font-size:.55rem;
+
+    color:#6B7280;
+}
+
+.comdilo-categories{
+    display:flex;
+    gap:.4rem;
+
+    padding:0 1rem .75rem;
+}
+
+.comdilo-category{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:0 .6rem;
+
+    width:auto;
+
+    height:18px;
+
+    font-size:.5rem;
+    font-weight:600;
+
+    color:#374151;
+
+    border-radius:999px;
+
+    background:#D1D5DB;
+
+    flex-shrink: 0;
+}
+
+.comdilo-category.active{
+    color: #FFFFFF;
+    background: #16A34A;
+}
+
+.comdilo-products{
+    display:flex;
+    flex-direction:column;
+    gap:.5rem;
+
+    padding:0 1rem 1rem;
+}
+
+.comdilo-product{
+    background:#FFFFFF;
+
+    border:1px solid #D1D5DB;
+
+    border-radius:10px;
+
+    padding: .45rem .6rem;
+    box-shadow:0 1px 3px rgba(0,0,0,.08);
+}
+
+.comdilo-product h5{
+    margin:0 0 .2rem;
+
+    font-size:.55rem;
+    font-weight:700;
+
+    color:#111827;
+}
+
+.comdilo-product p{
+    margin:0 0 .35rem;
+
+    font-size:.45rem;
+
+    color:#6B7280;
+}
+
+.comdilo-product span{
+    font-size:.55rem;
+    font-weight:700;
+
+    color:#16A34A;
+}
+
+/* COMDILO ADMIN SLIDE */
+
+.browser-comdilo-admin{
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+
+    background: #F8FAFC;
+    border-radius: 18px;
+
+    overflow: hidden;
+}
+
+.admin-sidebar{
+
+    width:72px;
+
+    background:#111827;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    padding:16px 10px;
+}
+
+.admin-logo{
+
+    margin-bottom:20px;
+
+    font-size:15px;
+    font-weight:800;
+
+    color:#16A34A;
+
+    letter-spacing:-0.02em;
+}
+.admin-menu{
+
+    width:100%;
+
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.admin-menu-item{
+
+    width:100%;
+    height:8px;
+
+    border-radius:999px;
+
+    background:#374151;
+}
+
+.admin-menu-item.active{
+
+    background:#16A34A;
+}
+.admin-content{
+    flex:1;
+    padding:16px;
+}
+
+.admin-products{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.admin-product{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:10px 12px;
+
+    background:#FFFFFF;
+
+    border:1px solid #E5E7EB;
+    border-radius:10px;
+}
+
+.admin-product-info{
+
+    display:flex;
+    flex-direction:column;
+    gap:2px;
+}
+
+.admin-product-name{
+    font-size:11px;
+    font-weight:600;
+
+    color:#111827;
+}
+
+.admin-product-price{
+    font-size:10px;
+
+    color:#16A34A;
+}
+
+.admin-product-button{
+
+    padding:4px 8px;
+
+    border:none;
+    border-radius:6px;
+
+    background:#F3F4F6;
+
+    font-size:10px;
+    font-weight:600;
+
+    color:#374151;
+}
+
+.admin-button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 8px 14px;
+
+    background: #16A34A;
+    color: #FFFFFF;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    cursor: default;
+
+    margin-bottom: 16px;
+}
+
+/* Encabezado */
+
+.admin-header{
+    margin-bottom: 16px;
+}
+
+.admin-topbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 12px;
+}
+
+.admin-page-title{
+    font-size: 15px;
+    font-weight: 700;
+
+    color: #111827;
+}
+
+.admin-search{
+    width: 70px;
+    height: 10px;
+
+    border-radius: 999px;
+
+    background: #D1D5DB;
+}
+
