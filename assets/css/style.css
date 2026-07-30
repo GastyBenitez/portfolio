@@ -58,8 +58,12 @@ body {
     margin-inline: auto;
 }
 
-section {
-    padding: 8rem 0;
+.section {
+    padding: 6rem 0;
+}
+
+#about {
+    padding-top: 3rem;
 }
 
 h1,
@@ -119,6 +123,36 @@ img {
 }
 
 /* ==========================================
+   UTILIDADES
+========================================== */
+
+.container {
+    width: min(1200px, 90%);
+    margin: 0 auto;
+}
+
+.section-tag {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: var(--primary);
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.section-title {
+    max-width: 700px;
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.1;
+    margin-bottom: 2rem;
+}
+
+.section-description {
+    max-width: 650px;
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+
+/* ==========================================
    HEADER
 ========================================== */
 
@@ -163,10 +197,9 @@ img {
 ========================================== */
 
 .hero {
-    min-height: calc(100vh - 80px);
     display: flex;
     align-items: center;
-    padding-top: 80px;
+    padding: 140px 0 100px;
 }
 
 .hero-content {
@@ -227,6 +260,24 @@ img {
     transform: translate(-50%, -50%);
     z-index: -1;
     pointer-events: none;
+}
+
+/* ==========================================
+   SOBRE MÍ
+========================================== */
+
+.about-content {
+    max-width: 800px;
+}
+
+.about-content p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.about-content p:last-child {
+    margin-bottom: 0;
 }
 
 
