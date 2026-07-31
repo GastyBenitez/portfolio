@@ -1,12 +1,16 @@
 # Portfolio
 
-Portfolio personal desarrollado para presentar mis proyectos, mostrar mi forma de trabajar y ofrecer servicios de desarrollo web a potenciales clientes.
+Portfolio personal desarrollado para presentar mis proyectos y ofrecer servicios de desarrollo web a potenciales clientes.
+
+## Demo
+
+Próximamente
 
 ## Estado del proyecto
 
 🚧 En desarrollo
 
-La estructura del sitio y la versión responsive ya están implementadas. Actualmente el desarrollo se centra en el refinamiento visual, optimización, accesibilidad y preparación para producción.
+La primera versión del portfolio está prácticamente finalizada. Actualmente el desarrollo se centra en pequeños ajustes visuales y la preparación para el despliegue.
 
 ## Características
 
@@ -14,8 +18,7 @@ La estructura del sitio y la versión responsive ya están implementadas. Actual
 - Interfaz moderna y minimalista
 - Navegación de una sola página
 - Slider interactivo en el Hero
-- Secciones organizadas para presentar proyectos y servicios
-- Código desarrollado con HTML, CSS y JavaScript puro
+- SEO básico implementado
 
 ## Secciones
 
@@ -35,11 +38,8 @@ La estructura del sitio y la versión responsive ya están implementadas. Actual
 ## Próximos pasos
 
 - Ajustes visuales finales
-- Animaciones e interacciones
-- SEO
-- Optimización de rendimiento
+- Favicon
 - Deploy
-- Dominio personalizado
 
 ## Objetivo
 
