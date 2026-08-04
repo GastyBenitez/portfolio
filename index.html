@@ -519,42 +519,86 @@
                         <!-- Lista de proyectos -->
                         <div class="projects-grid">
 
-                            <!-- Proyecto -->
-                            <article class="project-card">
+    <!-- ========================================
+                    Proyecto Comdilo
+    ======================================== -->
 
-                                <!-- Vista previa del proyecto -->
-                                <div class="project-preview">
+    <article class="project-card">
 
-                                    <div class="project-placeholder">
+        <!-- Vista previa del proyecto -->
+        <div class="project-preview">
 
-                                        <span>Comdilo</span>
+            <div class="project-placeholder">
 
-                                        <p>Disponible próximamente</p>
+                <span>Comdilo</span>
 
-                                    </div>
+                <p>Disponible próximamente</p>
 
-                                </div>
+            </div>
 
-                                <!-- Información del proyecto -->
-                                <div class="project-content">
+        </div>
 
-                                    <h3 class="project-title">
-                                        Comdilo
-                                    </h3>
+        <!-- Información del proyecto -->
+        <div class="project-content">
 
-                                    <p class="project-description">
-                                        Plataforma web para restaurantes actualmente en desarrollo. Su objetivo es simplificar la gestión de pedidos y ofrecer una mejor experiencia tanto para clientes como para comercios.
-                                    </p>
+            <h3 class="project-title">
+                Comdilo
+            </h3>
 
-                                    <span class="project-status">
-                                        En desarrollo
-                                    </span>
+            <p class="project-description">
+                Plataforma web para restaurantes actualmente en desarrollo. Su objetivo es simplificar la gestión de pedidos y ofrecer una mejor experiencia tanto para clientes como para comercios.
+            </p>
 
-                                </div>
+            <span class="project-status">
+                En desarrollo
+            </span>
 
-                            </article>
+        </div>
 
-                        </div>
+    </article>
+
+    <!-- ========================================
+                Proyecto CyM Comidas
+    ======================================== -->
+
+    <article class="project-card">
+
+        <!-- Vista previa del proyecto -->
+        <div class="project-preview" data-gallery="cym">
+
+            <img
+                src="assets/img/projects/cym-landing-hero.png"
+                alt="Vista previa de la landing de CyM Comidas"
+                class="project-image">
+
+        </div>
+
+        <!-- Información del proyecto -->
+        <div class="project-content">
+
+            <h3 class="project-title">
+                CyM Comidas y Refrigerios SRL
+            </h3>
+
+            <p class="project-description">
+                Landing page institucional diseñada para presentar la empresa, sus servicios y sus principales clientes mediante una interfaz moderna, elegante y enfocada en transmitir confianza.
+            </p>
+
+            <a
+                href="https://lading-page-cym-comidas.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-status">
+
+                Abrir sitio
+
+            </a>
+
+        </div>
+
+    </article>
+
+</div>
 
             </div>
 
@@ -704,6 +748,56 @@
 
     <script src="assets/js/main.js"></script>
     <script src="assets/js/slider.js"></script>
+    <script src="assets/js/gallery.js"></script>
+
+    <!-- ========================================
+                Gallery Modal
+======================================== -->
+
+<div class="gallery-modal" id="gallery-modal">
+
+    <!-- Overlay -->
+
+   
+
+    <!-- Contenido -->
+
+    <div class="gallery-content">
+
+        <!-- Cerrar -->
+
+        <button class="gallery-close" aria-label="Cerrar galería">
+
+            <i class="bi bi-x-lg"></i>
+
+        </button>
+
+        <!-- Imagen anterior -->
+
+        <button class="gallery-prev" aria-label="Imagen anterior">
+
+            <i class="bi bi-chevron-left"></i>
+
+        </button>
+
+        <!-- Imagen -->
+
+        <img
+            src=""
+            alt="Captura del proyecto"
+            class="gallery-image">
+
+        <!-- Imagen siguiente -->
+
+        <button class="gallery-next" aria-label="Imagen siguiente">
+
+            <i class="bi bi-chevron-right"></i>
+
+        </button>
+
+    </div>
+
+</div>
 
 </body>
 
