@@ -1,30 +1,31 @@
 # Portfolio
 
-Portfolio personal desarrollado para presentar mis proyectos y ofrecer servicios de desarrollo web a potenciales clientes.
+Portfolio personal desarrollado para presentar mis proyectos y ofrecer servicios de desarrollo web.
 
 ## Demo
 
-Próximamente
+https://portfolio-five-chi-s2qhwruj8v.vercel.app/
 
-## Estado del proyecto
+## Descripción
 
-🚧 En desarrollo
+Este sitio reúne algunos de los proyectos que desarrollé y muestra mi forma de trabajar, priorizando el diseño, la experiencia de usuario y la calidad del desarrollo.
 
-La primera versión del portfolio está prácticamente finalizada. Actualmente el desarrollo se centra en pequeños ajustes visuales y la preparación para el despliegue.
+Actualmente incluye proyectos reales y servirá como base para incorporar nuevos trabajos a medida que sean publicados.
 
 ## Características
 
 - Diseño responsive
 - Interfaz moderna y minimalista
 - Navegación de una sola página
-- Slider interactivo en el Hero
-- SEO básico implementado
+- Galería interactiva para visualizar proyectos
+- Integración con proyectos publicados
+- SEO básico
 
 ## Secciones
 
 - Hero
 - Sobre mí
-- Trabajos recientes
+- Proyectos
 - Servicios
 - Contacto
 - Footer
@@ -35,12 +36,21 @@ La primera versión del portfolio está prácticamente finalizada. Actualmente e
 - CSS3
 - JavaScript (ES6)
 
-## Próximos pasos
+## Proyectos destacados
 
-- Ajustes visuales finales
-- Favicon
-- Deploy
+- **CyM Comidas y Refrigerios SRL**
+  - Landing page institucional diseñada para presentar la empresa, sus servicios y principales clientes.
+  - Vista previa integrada dentro del portfolio.
+  - Galería de capturas.
+  - Acceso al sitio publicado.
+
+- **Comdilo**
+  - Plataforma web para restaurantes actualmente en desarrollo.
 
 ## Objetivo
 
-Este portfolio fue desarrollado para presentar mis proyectos y facilitar el contacto con potenciales clientes interesados en el desarrollo de landing pages, sitios web y aplicaciones web.
+El objetivo de este portfolio es mostrar proyectos reales, documentar mi crecimiento como desarrollador y ofrecer una forma sencilla para que potenciales clientes conozcan mi trabajo y puedan contactarme.
+
+## Licencia
+
+Este proyecto se publica únicamente con fines de presentación profesional.
