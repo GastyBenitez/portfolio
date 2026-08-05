@@ -577,20 +577,20 @@ img {
 
 .gallery-close {
 
-    top: -70px;
+    top: -50px;
     right: 0;
 
 }
 
 .gallery-prev {
 
-    left: -70px;
+    left: -69px;
 
 }
 
 .gallery-next {
 
-    right: -70px;
+    right: -69px;
 
 }
 
